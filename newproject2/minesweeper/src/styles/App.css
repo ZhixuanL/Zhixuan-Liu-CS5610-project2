@@ -1,0 +1,75 @@
+/* 全局样式 */
+body {
+  background-color: #C8F4D4; /* 修改背景颜色 */
+  font-family: 'Sour Gummy', cursive; /* 修改字体样式 */
+}
+
+/* board 样式 */
+.board {
+  display: grid;
+  grid-gap: 5px;
+  background-color: #C8F4D4;  /* 修改棋盘背景颜色 */
+}
+
+/* cell 样式 */
+.cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  font-family: 'Sour Gummy', cursive; /* 修改字体 */
+}
+
+/* 点击并揭示时的格子 */
+.cell.revealed {
+  background-color: #eee;
+  cursor: default;
+}
+
+/* 当鼠标悬停时的格子 */
+.cell:hover {
+  background-color: #ccc;
+}
+
+/* 点击炸弹时的格子背景颜色 */
+.cell.bomb {
+  background-color: pink; /* 设置为粉色 */
+}
+
+/* 难度样式 */
+.easy {
+  background-color: lightgreen;
+}
+
+.medium {
+  background-color: lightblue;
+}
+
+.hard {
+  background-color: lightcoral;
+}
+
+/* 游戏结束时的样式 */
+.game-message.game-over {
+  color: red; /* 红色 */
+  font-size: 2rem; /* 字体稍大 */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 游戏胜利时的样式 */
+.game-message.game-won {
+  color: green; /* 绿色 */
+  font-size: 2rem; /* 字体稍大 */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
